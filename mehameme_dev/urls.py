@@ -9,7 +9,7 @@ urlpatterns = patterns('',
     (r'^accounts/', include('django_facebook.auth_urls')), #Don't add this line if you use django registration or userena for registration and auth.
     # Examples:
     # url(r'^$', 'mehameme_dev.views.home', name='home'),
-    # url(r'^mehameme_dev/', include('mehameme_dev.foo.urls')),
+    url(r'', include('main.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
