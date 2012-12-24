@@ -1,1 +1,0 @@
-/home/lior/workspace-mehameme/mehameme_dev/mehameme_dev/settings.py
