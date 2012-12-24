@@ -11,6 +11,9 @@ libraries:
 builtins:
 - django_wsgi: on
 
+env_variables:
+  DJANGO_SETTINGS_MODULE: 'mehameme_dev.settings'
+
 handlers:
 - url: /static
   static_dir: static
