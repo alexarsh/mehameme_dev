@@ -5,55 +5,69 @@
     <meta charset="UTF-8" />
     <meta name="author" content="TikalMike" />
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/elastislide.css" />
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/jquery-ui-1.9.2.custom.css" />
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/main.css" />
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/bootstrap.css" />
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.8.3.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery-ui-1.9.2.custom.js"></script>
     <script src="{{ STATIC_URL }}js/modernizr.custom.17475.js"></script>
     <script src="{{ STATIC_URL }}js/main.js"></script>
-    <title>Site Demo Main Page</title>
+    <script src="{{ STATIC_URL }}js/bootstrap.js"></script>
+
+    <title>Mehameme</title>
 </head>
-<body>
-שלי:
+<body onload="load()">
+
 <div id = "mainPanel">
-    <!-- Elastislide Carousel -->
-    <ul id="carousel1" class="elastislide-list">
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/1.jpg" alt="image01" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/2.jpg" alt="image02" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/3.jpg" alt="image03" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/4.jpg" alt="image04" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/5.jpg" alt="image05" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/6.jpg" alt="image06" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/7.jpg" alt="image07" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/8.jpg" alt="image08" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/9.jpg" alt="image09" /></a></li>
+    <div class = "well">
+        <h1>
+            שלי
+        </h1>
+        <!-- Elastislide Carousel -->
+        <ul id="carousel1" class="elastislide-list">
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/1.jpg" alt="image01" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/2.jpg" alt="image02" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/3.jpg" alt="image03" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/4.jpg" alt="image04" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/5.jpg" alt="image05" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/6.jpg" alt="image06" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/7.jpg" alt="image07" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/8.jpg" alt="image08" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/9.jpg" alt="image09" /></a></li>
 
-    </ul>
-    הכי פופולארים:
-    <ul id="carousel2" class="elastislide-list">
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/10.jpg" alt="image10" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/11.jpg" alt="image11" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/12.jpg" alt="image12" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/13.jpg" alt="image13" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/14.jpg" alt="image14" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/15.jpg" alt="image15" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/16.jpg" alt="image16" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/17.jpg" alt="image17" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/18.jpg" alt="image18" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/19.jpg" alt="image19" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/20.jpg" alt="image20" /></a></li>
+        </ul>
+        <h1>
+            הכי פופולארים
+        </h1>
+        <ul id="carousel2" class="elastislide-list">
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/10.jpg" alt="image10" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/11.jpg" alt="image11" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/12.jpg" alt="image12" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/13.jpg" alt="image13" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/14.jpg" alt="image14" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/15.jpg" alt="image15" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/16.jpg" alt="image16" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/17.jpg" alt="image17" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/18.jpg" alt="image18" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/19.jpg" alt="image19" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/20.jpg" alt="image20" /></a></li>
 
-    </ul>
-    אחרונים
-    <ul id="carousel3" class="elastislide-list">
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/15.jpg" alt="image15" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/16.jpg" alt="image16" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/17.jpg" alt="image17" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/18.jpg" alt="image18" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/19.jpg" alt="image19" /></a></li>
-        <li><a href="#"><img src="{{ STATIC_URL }}images/small/20.jpg" alt="image20" /></a></li>
+        </ul>
+        <h1>
+            אחרונים
+        </h1>
+        <ul id="carousel3" class="elastislide-list">
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/15.jpg" alt="image15" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/16.jpg" alt="image16" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/17.jpg" alt="image17" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/18.jpg" alt="image18" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/19.jpg" alt="image19" /></a></li>
+            <li><a href="#"><img src="{{ STATIC_URL }}images/small/20.jpg" alt="image20" /></a></li>
 
-    </ul>
+        </ul>
+    </div>
 </div>
 <!-- End Elastislide Carousel -->
-<script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.8.3.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/jquerypp.custom.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.elastislide.js"></script>
 <script type="text/javascript">
@@ -63,7 +77,20 @@
     car3 = $( '#carousel3' ).elastislide();
 
 </script>
+<div id="dialog-form" title="Create new user">
+    <p class="validateTips">All form fields are required.</p>
 
+    <form>
+        <fieldset>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all" />
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" value="" class="text ui-widget-content ui-corner-all" />
+        </fieldset>
+    </form>
+</div>
 <button onclick="addToFirst()"> add to first </button>
 </body>
 </html>
