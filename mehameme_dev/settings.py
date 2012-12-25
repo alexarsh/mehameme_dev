@@ -48,12 +48,12 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = ''
+MEDIA_ROOT = "%s/../media" % PROJECT_DIR,
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
-MEDIA_URL = ''
+MEDIA_URL = '/media/'
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -120,7 +120,8 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_facebook',
+    'django.contrib.admin',
+    #'django_facebook',
     'main',
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
@@ -160,16 +161,16 @@ LOGGING = {
 FACEBOOK_APP_ID='502827979761692',
 FACEBOOK_APP_SECRET='08f5388ad1e78d5843409f1398146c3a',
 
-TEMPLATE_CONTEXT_PROCESSORS = (
-    'django_facebook.context_processors.facebook',
-    'django.contrib.auth.context_processors.auth',
-    'django.core.context_processors.debug',
-    'django.core.context_processors.i18n',
-    'django.core.context_processors.media',
-    'django.core.context_processors.static',
-    'django.core.context_processors.tz',
-    'django.contrib.messages.context_processors.messages',
-)
+#TEMPLATE_CONTEXT_PROCESSORS = (
+#    'django_facebook.context_processors.facebook',
+#    'django.contrib.auth.context_processors.auth',
+#    'django.core.context_processors.debug',
+#    'django.core.context_processors.i18n',
+#    'django.core.context_processors.media',
+#    'django.core.context_processors.static',
+#    'django.core.context_processors.tz',
+#    'django.contrib.messages.context_processors.messages',
+#)
 
 AUTHENTICATION_BACKENDS = (
     'django_facebook.auth_backends.FacebookBackend',
