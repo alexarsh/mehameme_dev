@@ -15,11 +15,10 @@ $(function() {
     })
     $("#save").click(function(e) {
         var canvas = $("#meme_canvas")[0];
-//        Canvas2Image.saveAsJPEG(canvas);
         var strMime = "image/jpeg";
         var strDownloadMime = "image/octet-stream";
         var strData = canvas.toDataURL(strMime);
-        strData = strData.replace(strMime, strDownloadMime)
+        strData = strData.replace(strMime, strDownloadMime);
         document.location.href = strData;
     })
 });
