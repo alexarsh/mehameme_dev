@@ -1,0 +1,19 @@
+#meme_canvas {
+    height: 300px;
+    width: 300px;
+    background:url(/static/images/empty_memes/1.jpg);
+}
+
+#buttons_div {
+    display: inline-block;
+    vertical-align: top;
+    width: 17%;
+}
+
+#top_text {
+    direction: rtl;
+}
+
+#bottom_text {
+    direction: rtl;
+}
