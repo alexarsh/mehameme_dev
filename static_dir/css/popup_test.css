@@ -27,6 +27,10 @@
     direction: rtl;
 }
 
-#generate {
+.formButton {
     margin-top: 10px;
+}
+
+#formPost{
+    visibility: hidden;
 }
