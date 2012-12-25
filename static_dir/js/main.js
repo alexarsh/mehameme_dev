@@ -22,8 +22,16 @@ $(function()  {
             var imageUrl = $(this).attr("src");
             var newImageUrl = imageUrl.replace("ready", "empty");
             var can = document.getElementsByTagName('canvas')[0];
-            can.style.background = "url(" +newImageUrl + ")";
-            can.style.backgroundRepeat = 'no-repeat';
+            var ctx = can.getContext("2d");
+            var img = document.createElement('img');
+            img.src = newImageUrl;
+            img.onload = function(){
+                var can = document.getElementsByTagName('canvas')[0];
+                ctx.drawImage(img, 0, 0, can.width, can.height);
+            };
+
+//            can.style.background = "url(" +newImageUrl + ")";
+//            can.style.backgroundRepeat = 'no-repeat';
             $( "#dialog-form" ).dialog( "open" );
         });
 

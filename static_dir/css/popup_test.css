@@ -34,3 +34,7 @@
 #formPost{
     visibility: hidden;
 }
+
+#tempImage{
+    /*visibility: hidden;*/
+}
