@@ -1,6 +1,6 @@
 #mainPanel {
-    padding: 10%;
-    margin-bottom: 10%;
+    /*padding: 10%;*/
+    margin-bottom: 5%;
     margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
@@ -8,4 +8,8 @@
 
 #mainPanel h1{
     direction:rtl;
+}
+
+.image{
+    cursor: pointer;
 }

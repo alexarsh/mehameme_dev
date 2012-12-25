@@ -13,11 +13,12 @@
     <script src="{{ STATIC_URL }}js/modernizr.custom.17475.js"></script>
     <script src="{{ STATIC_URL }}js/main.js"></script>
     <script src="{{ STATIC_URL }}js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/popup_test.css" />
+    <script type="text/javascript" src="{{ STATIC_URL }}js/popup_test.js"></script>
 
     <title>Mehameme</title>
 </head>
-<body onload="load()">
-
+<body>
 <div id = "mainPanel">
     <div class = "well">
         <h1>
@@ -25,38 +26,39 @@
         </h1>
         <!-- Elastislide Carousel -->
         <ul id="carousel1" class="elastislide-list">
-            <li><a href="#"><img src="{{ STATIC_URL }}images/empty_memes/1.jpg" alt="image01" /></a></li>
-            <li><a href="#"><img src="{{ STATIC_URL }}images/empty_memes/2.jpg" alt="image02" /></a></li>
-            <li><a href="#"><img src="{{ STATIC_URL }}images/empty_memes/3.jpg" alt="image03" /></a></li>
-            <li><a href="#"><img src="{{ STATIC_URL }}images/empty_memes/4.jpg" alt="image04" /></a></li>
-            <li><a href="#"><img src="{{ STATIC_URL }}images/empty_memes/5.jpg" alt="image05" /></a></li>
-            <li><a href="#"><img src="{{ STATIC_URL }}images/empty_memes/6.jpg" alt="image06" /></a></li>
-            <li><a href="#"><img src="{{ STATIC_URL }}images/empty_memes/7.jpg" alt="image07" /></a></li>
+            <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/1.jpg" alt="image01" /></li>
+            <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/2.jpg" alt="image02" /></li>
+            <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/3.jpg" alt="image03" /></li>
+            <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/4.jpg" alt="image04" /></li>
+            <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/5.jpg" alt="image05" /></li>
+            <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/6.jpg" alt="image06" /></li>
+            <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/7.jpg" alt="image07" /></li>
+
         </ul>
         <h1>
             הכי פופולארים
         </h1>
         <ul id="carousel2" class="elastislide-list">
-            <li><a href="#"><img src="{{ STATIC_URL }}images/empty_memes/3.jpg" alt="image10" /></a></li>
-            <li><a href="#"><img src="{{ STATIC_URL }}images/empty_memes/7.jpg" alt="image11" /></a></li>
-            <li><a href="#"><img src="{{ STATIC_URL }}images/empty_memes/1.jpg" alt="image12" /></a></li>
-            <li><a href="#"><img src="{{ STATIC_URL }}images/empty_memes/6.jpg" alt="image13" /></a></li>
-            <li><a href="#"><img src="{{ STATIC_URL }}images/empty_memes/5.jpg" alt="image14" /></a></li>
-            <li><a href="#"><img src="{{ STATIC_URL }}images/empty_memes/2.jpg" alt="image15" /></a></li>
-            <li><a href="#"><img src="{{ STATIC_URL }}images/empty_memes/4.jpg" alt="image16" /></a></li>
+            <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/1.jpg" alt="image01" /></li>
+            <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/2.jpg" alt="image02" /></li>
+            <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/3.jpg" alt="image03" /></li>
+            <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/4.jpg" alt="image03" /></li>
+            <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/5.jpg" alt="image03" /></li>
+            <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/6.jpg" alt="image03" /></li>
+            <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/7.jpg" alt="image03" /></li>
 
         </ul>
         <h1>
             אחרונים
         </h1>
         <ul id="carousel3" class="elastislide-list">
-            <li><a href="#"><img src="{{ STATIC_URL }}images/empty_memes/7.jpg" alt="image15" /></a></li>
-            <li><a href="#"><img src="{{ STATIC_URL }}images/empty_memes/6.jpg" alt="image16" /></a></li>
-            <li><a href="#"><img src="{{ STATIC_URL }}images/empty_memes/5.jpg" alt="image17" /></a></li>
-            <li><a href="#"><img src="{{ STATIC_URL }}images/empty_memes/4.jpg" alt="image18" /></a></li>
-            <li><a href="#"><img src="{{ STATIC_URL }}images/empty_memes/3.jpg" alt="image19" /></a></li>
-            <li><a href="#"><img src="{{ STATIC_URL }}images/empty_memes/2.jpg" alt="image20" /></a></li>
-            <li><a href="#"><img src="{{ STATIC_URL }}images/empty_memes/1.jpg" alt="image20" /></a></li>
+            <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/1.jpg" alt="image01" /></li>
+            <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/2.jpg" alt="image02" /></li>
+            <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/3.jpg" alt="image03" /></li>
+            <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/4.jpg" alt="image03" /></li>
+            <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/5.jpg" alt="image03" /></li>
+            <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/6.jpg" alt="image03" /></li>
+            <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/7.jpg" alt="image03" /></li>
         </ul>
     </div>
 </div>
@@ -70,18 +72,15 @@
     car3 = $( '#carousel3' ).elastislide();
 
 </script>
-<div id="dialog-form" title="Create new user">
-    <p class="validateTips">All form fields are required.</p>
-
-    <form>
-        <fieldset>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
-            <label for="email">Email</label>
-            <input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all" />
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" value="" class="text ui-widget-content ui-corner-all" />
-        </fieldset>
+<div id="dialog-form" title="ממ חדש">
+    <canvas id="meme_canvas"></canvas>
+    <div id="buttons_div">
+        <input id="top_text"/>
+        <input id="bottom_text"/> Top text
+        <input type="button" id="generate" value="Generate"/>
+    </div>
+    <form action="/" method="POST"> {% csrf_token %}
+        {{ form }}
     </form>
 </div>
 <button onclick="addToFirst()"> add to first </button>

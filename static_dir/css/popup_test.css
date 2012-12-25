@@ -1,7 +1,7 @@
 #meme_canvas {
     height: 300px;
     width: 300px;
-    background:url(/static/images/empty_memes/1.jpg);
+    /*background:url(/static/images/empty_memes/1.jpg);*/
 }
 
 #buttons_div {
