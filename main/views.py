@@ -4,7 +4,8 @@ from main.models import Meme
 
 def home(request):
     meme_form = MemeForm()
-    my_meme = request.user.memes
+    if not request.user.is_anonymous():
+        my_meme = request.user.memes
     if request.method == "POST":
         meme_form = MemeForm(request.POST)
         if meme_form.is_valid():
