@@ -12,5 +12,8 @@
             <input id="bottom_text"/> {% trans "Top text" %}
             <input type="button" id="generate" value="Generate"/>
         </div>
+        <form action="/" method="POST"> {% csrf_token %}
+            {{ form }}
+        </form>
     </body>
 </html>
