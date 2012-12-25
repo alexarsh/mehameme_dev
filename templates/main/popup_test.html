@@ -8,8 +8,8 @@
         {% load i18n %}
         <canvas id="meme_canvas"></canvas>
         <div id="buttons_div">
-            <input id="top_text"/> {{ _("Bottom text") }}
-            <input id="bottom_text"/> {% trans "Top text" %}
+            <input id="top_text"/> Bottom text
+            <input id="bottom_text"/> Top text
             <input type="button" id="generate" value="Generate"/>
         </div>
         <form action="/" method="POST"> {% csrf_token %}

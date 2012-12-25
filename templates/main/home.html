@@ -26,6 +26,9 @@
         </h1>
         <!-- Elastislide Carousel -->
         <ul id="carousel1" class="elastislide-list">
+            {#            {% for meme in my_meme %}#}
+            {#                <li><img class="image" src="{{ meme }}" alt="image01" /></li>#}
+            {#            {% endfor %}#}
             <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/1.jpg" alt="image01" /></li>
             <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/2.jpg" alt="image02" /></li>
             <li><img class="image" src="{{ STATIC_URL }}images/ready_memes/3.jpg" alt="image03" /></li>
@@ -72,17 +75,23 @@
     car3 = $( '#carousel3' ).elastislide();
 
 </script>
-<div id="dialog-form" title="ממ חדש">
+<div id="dialog-form" title="מם חדש">
     <canvas id="meme_canvas"></canvas>
     <div id="buttons_div">
+        <div class="popuplable">
+            למעלה
+        </div>
         <input id="top_text"/>
-        <input id="bottom_text"/> Top text
+        <div class="popuplable">
+            למטה
+        </div>
+        <input id="bottom_text"/>
+
         <input type="button" id="generate" value="Generate"/>
     </div>
     <form action="/" method="POST"> {% csrf_token %}
         {{ form }}
     </form>
 </div>
-<button onclick="addToFirst()"> add to first </button>
 </body>
 </html>

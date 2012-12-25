@@ -1,13 +1,13 @@
 #meme_canvas {
     height: 300px;
     width: 300px;
-    /*background:url(/static/images/empty_memes/1.jpg);*/
+    background-size: 100% auto;
 }
 
 #buttons_div {
     display: inline-block;
     vertical-align: top;
-    width: 17%;
+    width: 100px;
 }
 
 #top_text {
@@ -16,4 +16,17 @@
 
 #bottom_text {
     direction: rtl;
+}
+
+.popuplable{
+    direction: rtl;
+    width: 100%;
+}
+
+.ui-dialog .ui-dialog-title{
+    direction: rtl;
+}
+
+#generate {
+    margin-top: 10px;
 }
